@@ -1,0 +1,85 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.mob.sdk'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+    defaultConfig {
+        applicationId "com.star.foodfans"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+MobSDK {
+    appKey "2da5fb30c85f0"
+    appSecret "c809ad6648dfbe63c975747df871bd29"
+
+    ShareSDK {
+        //平台配置信息
+        devInfo {
+            QQ {
+                appId "1109746099"
+                appKey "OW7D6lfVici0iI58"
+                shareByAppClient true
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'com.google.android.material:material:1.0.0'
+
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.14'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.2'
+    // RxJava support for Room
+    implementation 'android.arch.persistence.room:rxjava2:1.1.1'
+
+    implementation "com.rengwuxian.materialedittext:library:2.1.4"
+    implementation 'com.contrarywind:Android-PickerView:4.1.9'
+
+    //Image
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.10.0'
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    //validate
+    implementation 'com.basgeekball:awesome-validation:2.0'
+
+    //navigation
+    implementation 'com.aurelhubert:ahbottomnavigation:2.3.4'
+
+    //Network
+    implementation 'com.squareup.retrofit2:retrofit:2.7.0'
+    //gson
+    implementation 'com.squareup.retrofit2:converter-gson:2.7.0'
+
+    // Room依赖
+    implementation 'android.arch.persistence.room:runtime:1.1.1'
+    annotationProcessor "android.arch.persistence.room:compiler:1.1.1"
+
+    //test
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:1.10.19'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    androidTestImplementation 'androidx.test:rules:1.2.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+
+}

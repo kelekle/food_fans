@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:cardCornerRadius="5dp"
+    >
+
+    <TextView
+        android:background="@drawable/selector_common_click"
+        android:textColor="@color/selector_food_namecolor"
+        android:id="@+id/tv_foodcategory_left"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="家常菜"/>
+</androidx.cardview.widget.CardView>

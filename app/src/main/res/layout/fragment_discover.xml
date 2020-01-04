@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/main_food_search"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:background="@drawable/shape_round">-->
+
+<!--        <ImageView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:src="@mipmap/table_search_press"/>-->
+
+<!--        <TextView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginLeft="5dp"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="搜索"-->
+<!--            android:textColor="@android:color/darker_gray"/>-->
+<!--    </LinearLayout>-->
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1px"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ListView
+            android:padding="5dp"
+            android:id="@+id/foodcategory_lv_left"
+            android:layout_width="0dp"
+            android:scrollbars="none"
+            android:dividerHeight="10dp"
+            android:divider="@null"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="1px"
+            android:layout_height="match_parent"/>
+        <GridView
+            android:scrollbars="none"
+            android:padding="5dp"
+            android:id="@+id/foodcategory_gv_right"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:numColumns="2"
+            android:horizontalSpacing="10dp"
+            android:verticalSpacing="10dp"/>
+    </LinearLayout>
+</LinearLayout>

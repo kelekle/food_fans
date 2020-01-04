@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">FoodFans</string>
+
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+
+    <string name="slide_2_title">Make Food</string>
+    <string name="slide_2_desc">Make food and just enjoy the process!</string>
+
+    <string name="slide_3_title">Have A Taste</string>
+    <string name="slide_3_desc">It will be delicious, let us eat it!</string>
+
+    <string name="slide_4_title">Food Travel</string>
+    <string name="slide_4_desc">Enjoy the process of making food and share it with your friends, that sounds great!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+
+    <string name="title_activity_login">Sign in</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be > 5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="account_hint">"你的邮箱"</string>
+    <string name="password_hint">"请输入密码"</string>
+    <string name="login">"登录"</string>
+    <string name="register_link">"用户注册"</string>
+    <string name="forget_link">"忘记密码"</string>
+    <string name="register_account_hint">"请输入邮箱"</string>
+    <string name="register_verification">"验证码"</string>
+    <string name="register_password">"请输入6-12位密码"</string>
+    <string name="register_confirm_password">"确认密码"</string>
+    <string name="register_sms_hint">"获取验证码"</string>
+    <string name="register_hint">"注册"</string>
+    <string name="reset_pwd_confirm">"确定"</string>
+    <string name="titleBar_search_hint">请输入课程或老师名称</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="title_course">Course</string>
+    <string name="title_task">Task</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_me">me</string>
+    <string name="about_me">It\'s not who I am underneath, but what I do that defines me. I am the dark knight.</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_course_detail">CourseDetailActivity</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="toast_qq_login">You are using qq login!</string>
+
+</resources>

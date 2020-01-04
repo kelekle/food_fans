@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="48.0dip"
+    android:background="@color/colorAccent" >
+
+    <ImageView
+        android:id="@+id/img_back"
+        android:layout_width="40dp"
+        android:layout_height="22dp"
+        android:layout_centerVertical="true"
+        android:contentDescription="@string/app_name"
+        android:src="@mipmap/back" />
+
+    <TextView
+        android:id="@+id/txt_title"
+        style="@style/txt_titleStyle1"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:layout_toEndOf="@id/img_back"
+        android:layout_centerVertical="true"/>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginEnd="10dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/text_enable_false"
+        android:background="@drawable/save_profile_lock"
+        android:padding="4dp"
+        android:textSize="16sp"
+        android:text="发 表" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/save"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="35dp"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:contentDescription="@string/app_name"-->
+<!--        android:text="保存"-->
+<!--        android:background="@drawable/save_profile_lock" />-->
+
+</RelativeLayout>

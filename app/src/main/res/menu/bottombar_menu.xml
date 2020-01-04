@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/bottomBarHome"
+        android:icon="@mipmap/ic_home"
+        android:title="首页" />
+    <item
+        android:id="@+id/bottomBarLocation"
+        android:icon="@mipmap/table_search_normal"
+        android:title="发现" />
+    <item
+        android:id="@+id/bottomBarMessage"
+        android:icon="@mipmap/ic_message"
+        android:title="食光轴" />
+    <item
+        android:id="@+id/bottomBarMe"
+        android:icon="@mipmap/ic_account"
+        android:title="我的" />
+</menu>

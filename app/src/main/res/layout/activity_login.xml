@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/colorPrimary">
+
+            <TextView
+                android:layout_marginTop="120dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Food-Fans"
+                android:textSize="28dp"
+                android:textStyle="italic">
+            </TextView>
+
+            <LinearLayout
+                android:id="@+id/ll_login_username"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bg_login_input_ok"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_login_username_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@mipmap/ic_login_username" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="22dp"
+                    android:background="@color/black1" />
+
+                <EditText
+                    android:id="@+id/et_login_username"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:background="@null"
+                    android:hint="@string/account_hint"
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black1"
+                    android:textCursorDrawable="@null"/>
+
+                <ImageView
+                    android:id="@+id/iv_login_username_del"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    app:srcCompat="@mipmap/ic_clear" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_login_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bg_login_input_ok"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_login_pwd_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:contentDescription="@null"
+                    app:srcCompat="@mipmap/ic_login_password" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="22dp"
+                    android:background="@color/black1" />
+
+                <EditText
+                    android:id="@+id/et_login_pwd"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/password_hint"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:minLines="1"
+                    android:maxLength="12"
+                    android:paddingLeft="4dp"
+                    android:paddingRight="4dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/black1"
+                    android:textCursorDrawable="@null" />
+
+                <ImageView
+                    android:id="@+id/iv_login_pwd_del"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:contentDescription="@null"
+                    android:scaleType="fitCenter"
+                    android:visibility="gone"
+                    app:srcCompat="@mipmap/ic_clear" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/bt_login_submit"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/bg_login_submit"
+                android:elevation="0dp"
+                android:outlineProvider="none"
+                android:text="@string/login"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                tools:targetApi="lollipop" />
+
+            <ImageView
+                android:id="@+id/iv_login_qq"
+                android:layout_marginTop="60dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:contentDescription="@null"
+                android:padding="4dp"
+                android:scaleType="centerInside"
+                android:src="@mipmap/qq" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="QQ登录"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="24dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_login_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:text="@string/register_link"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    android:visibility="visible" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="22dp"
+                    android:layout_marginStart="25dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/black" />
+
+                <TextView
+                    android:id="@+id/tv_login_forget_pwd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="25dp"
+                    android:text="@string/forget_link"
+                    android:textColor="@color/white"
+                    android:textSize="16sp"
+                    tools:ignore="RtlSymmetry" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
