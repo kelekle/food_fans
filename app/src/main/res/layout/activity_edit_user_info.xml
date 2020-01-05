@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_marginTop="32dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <include layout="@layout/layout_title" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/setting_item_selector">
+
+        <RelativeLayout
+            android:id="@+id/profile_head_line"
+            android:layout_width="match_parent"
+            android:paddingEnd="10dp"
+            android:layout_height="80dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                style="@style/TxtTitle"
+                android:paddingLeft="16dp"
+                android:textSize="16sp"
+                android:gravity="center_vertical"
+                android:text="头像"/>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/profile_head"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="70.0dip"
+                android:layout_height="70.0dip"
+                android:layout_marginEnd="20dp"
+                android:src="@mipmap/default_head" />
+
+            <ImageView
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="50.0dip"
+                android:src="@mipmap/right" />
+
+        </RelativeLayout>
+
+            <View
+                android:background="@color/black2"
+                android:layout_width="fill_parent"
+                android:layout_marginStart="16dp"
+                android:layout_height="1.0dip" />
+
+            <RelativeLayout
+                android:id="@+id/profile_name_line"
+                android:layout_width="match_parent"
+                android:paddingEnd="10dp"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="16dp"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:text="名称"/>
+
+                <TextView
+                    android:id="@+id/profile_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginEnd="30dp"
+                    android:layout_alignParentRight="true"
+                    style="@style/TxtTitle"
+                    android:paddingLeft="16dp"
+                    android:textSize="16sp"
+                    android:gravity="center_vertical"
+                    android:text="kle"/>
+
+                <ImageView
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50.0dip"
+                    android:src="@mipmap/right" />
+
+            </RelativeLayout>
+
+<!--            <View-->
+<!--                android:background="@color/black2"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_height="1.0dip" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/profile_phone_line"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:paddingEnd="10dp"-->
+<!--                android:layout_height="55dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="手机号"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/profile_phone"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="18811021669"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50.0dip"-->
+<!--                    android:src="@mipmap/right" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                android:background="@color/black2"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_height="1.0dip" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/profile_sex_line"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:paddingEnd="10dp"-->
+<!--                android:layout_height="55dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="性别"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/profile_sex"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text=""/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50.0dip"-->
+<!--                    android:src="@mipmap/right" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                android:background="@color/black2"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_height="1.0dip" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/profile_age_line"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:paddingEnd="10dp"-->
+<!--                android:layout_height="55dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="年龄"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/profile_age"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="18"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50.0dip"-->
+<!--                    android:src="@mipmap/right" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                android:background="@color/black2"-->
+<!--                android:layout_marginStart="16dp"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="1.0dip" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/profile_region_line"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:paddingEnd="10dp"-->
+<!--                android:layout_height="55dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="地区"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/profile_region"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="陕西 咸阳"/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50.0dip"-->
+<!--                    android:src="@mipmap/right" />-->
+
+<!--            </RelativeLayout>-->
+
+<!--            <View-->
+<!--                android:background="@color/black2"-->
+<!--                android:layout_width="fill_parent"-->
+<!--                android:layout_height="1.0dip"-->
+<!--                android:layout_marginStart="16dp" />-->
+
+<!--            <RelativeLayout-->
+<!--                android:id="@+id/profile_description_line"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:paddingEnd="10dp"-->
+<!--                android:layout_height="55dp">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text="个人说明"/>-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/profile_description"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="55dp"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginBottom="10dp"-->
+<!--                    android:layout_marginEnd="30dp"-->
+<!--                    android:layout_marginStart="50dp"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    style="@style/TxtTitle"-->
+<!--                    android:paddingLeft="16dp"-->
+<!--                    android:textSize="16sp"-->
+<!--                    android:gravity="center_vertical"-->
+<!--                    android:text=""/>-->
+
+<!--                <ImageView-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_centerVertical="true"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="50.0dip"-->
+<!--                    android:src="@mipmap/right" />-->
+
+<!--            </RelativeLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

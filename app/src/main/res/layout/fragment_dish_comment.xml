@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bacground">
+    <TextView
+        android:id="@+id/none_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="暂无评论"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/comment_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <View
+        android:layout_below="@id/comment_rv"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="@color/line_bg" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="@dimen/margin_xxlarge"
+        android:layout_marginEnd="@dimen/margin_xlarge"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:backgroundTint="@color/colorAccent"
+        android:src="@drawable/ic_add"
+        app:backgroundTint="@color/colorAccent"
+        app:fabSize="auto"
+        app:layout_anchorGravity="bottom|center"
+        android:id="@+id/comment"/>
+
+
+</RelativeLayout>

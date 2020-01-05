@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="window_background">#FFF5F5F5</color>
+    <color name="colorPrimary">#FF5722</color>
+    <color name="colorPrimaryDark">#E64A19</color>
+    <color name="colorAccent">#FF9800</color>
+    <color name="bacground">#F1F1F1</color>
+
+    <color name="bg_screen1">#f64c73</color>
+    <color name="bg_screen2">#FF63D4</color>
+    <color name="bg_screen3">#F2211C</color>
+    <color name="bg_screen4">#FEE89C</color>
+
+    <!-- dots inactive colors -->
+    <color name="dot_dark_screen1">#d1395c</color>
+    <color name="dot_dark_screen2">#14a895</color>
+    <color name="dot_dark_screen3">#2278d4</color>
+    <color name="dot_dark_screen4">#a854d4</color>
+
+    <!-- dots active colors -->
+    <color name="dot_light_screen1">#f98da5</color>
+    <color name="dot_light_screen2">#8cf9eb</color>
+    <color name="dot_light_screen3">#93c6fd</color>
+    <color name="dot_light_screen4">#e4b5fc</color>
+
+    <array name="array_dot_active">
+        <item>@color/dot_light_screen1</item>
+        <item>@color/dot_light_screen2</item>
+        <item>@color/dot_light_screen3</item>
+        <item>@color/dot_light_screen4</item>
+    </array>
+
+    <array name="array_dot_inactive">
+        <item>@color/dot_dark_screen1</item>
+        <item>@color/dot_dark_screen2</item>
+        <item>@color/dot_dark_screen3</item>
+        <item>@color/dot_dark_screen4</item>
+    </array>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#484432</color>
+    <color name="dark_gray">#7b7769</color>
+    <color name="gray">#a3a090</color>
+    <!--  Fragment -->
+    <color name="book_info_item_tag_font">#ffffff</color>
+    <color name="book_info_item_tag_bgcolor">@color/colorPrimary</color>
+    <color name="book_info_item_font">@color/colorPrimary</color>
+    <!-- 字体颜色 -->
+    <color name="font_normal">#555555</color>
+    <color name="font_deep">#222222</color>
+    <color name="font_light">#888888</color>
+    <color name="font_gray">#656565</color>
+
+    <!-- 分割线 -->
+    <color name="line">#e5e5e5</color>
+    <color name="line_bg">#e6e6e6</color>
+    <color name="listview_divier">#dedede</color>
+    <!-- 按钮默认灰色背景 -->
+    <color name="button_normal_bg">#f5f7f7</color>
+
+    <!-- hint色 -->
+    <color name="text_hint">#b3b3b3</color>
+    <!-- 输入边框 -->
+    <color name="login_text_color">#222222</color>
+    <color name="input_border">#a5a5a5</color>
+    <!-- 主页灰白色 -->
+    <color name="white_50">#e8e8e8</color>
+    <!-- 描边线 -->
+    <color name="button_divider">#dbd9d9</color>
+    <!-- 45%透明黑 -->
+    <color name="black_alpha">#71000000</color>
+    <!-- 30%透明黑 -->
+    <color name="black_alpha_30">#48000000</color>
+
+    <!--底部字体颜色-->
+    <color name="tab_text_selector">#E64A19</color>
+    <color name="comment_transparent">#60E64A19</color>
+    <color name="tab_text_unselector">#FFA307</color>
+
+
+    <color name="colorBackground">#f9f9fa</color>
+    <color name="colorTextSubtitle">#4e4e4e</color>
+    <color name="colorTextTitle">#262626</color>
+
+    <color name="account_input_bg_color">#FCFAF2</color>
+    <color name="login_input_active">#31b968</color>
+    <color name="account_lock_bg">#ff43815c</color>
+    <color name="account_pressed_true">#14b94d</color>
+    <color name="account_lock_font_color">#FF68997C</color>
+    <color name="black1">#7A7E83</color>
+    <color name="blackk">#F9F9F9</color>
+    <!--所有带点击效果的颜色-->
+    <color name="click_background_normal">#ffffff</color>
+    <color name="click_background_press">#cccccc</color>
+
+    <color name="btn_enable_false">#E1E1E1</color>
+    <color name="text_enable_false">#C5C5C5</color>
+    <color name="black2">#ffeeeeee</color>
+
+</resources>
